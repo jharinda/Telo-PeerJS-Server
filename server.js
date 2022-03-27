@@ -85,4 +85,6 @@ app.use("/peerServer", peerServer);
 
 const PORT = process.env.PORT || 9000;
 
-server.listen(PORT);
+server.listen(PORT, () => {
+     console.log("server running on ", PORT);
+});
