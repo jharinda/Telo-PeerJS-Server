@@ -72,19 +72,6 @@ app.get("/connect", (req, res) => {
 
 /******************************************/
 
-// const peerConfig = {
-//      config: {
-//           iceServers: [
-//                { urls: "stun:stun.l.google.com:19302" },
-//                {
-//                     urls: "turn:numb.viagenie.ca",
-//                     credential: "muazkh",
-//                     username: "webrtc@live.com",
-//                },
-//           ],
-//      },
-// };
-
 const peerServer = ExpressPeerServer(server, {
      path: "/teloApp",
 });
